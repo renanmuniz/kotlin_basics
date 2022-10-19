@@ -36,4 +36,27 @@ fun main() {
         println("Statement is true - 4")
 
 
+    //Igualdades estruturais
+    // == equal
+    // != inequality
+    println("Igualdades estruturais")
+    var name1 = "Renan"
+    var name2 = "Muniz"
+    println(name1 == name2) //false
+
+    name2 = "Renan"
+    println(name1 == name2) //true
+
+
+
+    //Igualdades referenciais
+    println("Igualdades referenciais")
+    var a = Person("Renan")
+    var b = Person("Muniz")
+
+    println(a === b) //false
+    println(a !== b) //true
+
 }
+
+class Person (var name: String)
